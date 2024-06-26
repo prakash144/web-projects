@@ -1,0 +1,19 @@
+<?php
+	include('connect.php');
+?>
+<?php
+	//$n=-1;
+	if(isset($_POST['Submit']))
+	{
+		$mail=$_POST['email'];
+		$pwd=$_POST['pwd'];
+		$name=$_POST['name'];
+		$city=$_POST['city'];
+		$roll=$_POST['roll'];
+		$dob=$_POST['date'];
+		$mb=$_POST['mb'];
+		$gen=$_POST['gen'];
+		//$n=user_reg($name,$roll,$gen,$dob,$mail,$pwd,$mb,$city);
+		header('Location:user_detail.php?result='.$n);
+	}
+?>
